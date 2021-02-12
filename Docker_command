@@ -1,0 +1,2 @@
+docker build -t wordcounter .
+docker-compose up -d

@@ -52,6 +52,7 @@ module.exports = [
         handler: async  (request, h) =>{
             let payloadData = request.query;
             try {
+
                 let criteria = {
                     name:payloadData.word
                 };

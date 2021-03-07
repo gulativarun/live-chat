@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = {
-    APP_CONSTANTS: require('./appConstants')
+    APP_CONSTANTS: require('./appConstants'),
+    DB_CONFIG: require('./dbConfig')
 };

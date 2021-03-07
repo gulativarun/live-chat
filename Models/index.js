@@ -1,3 +1,3 @@
 module.exports = {
-    wordDb: require('./wordDb'),
+    user: require('./users'),
 };

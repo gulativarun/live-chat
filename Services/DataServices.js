@@ -19,8 +19,8 @@ let createData = function (Model,objToSave, callback) {
 
 
 // Delete data in DB
-let deleteData = function (Model, objToDelete, callback) {
-    return Model.deleteOne(objToDelete, callback)
+let deleteData = function (Model, criteria, projection, options, callback) {
+    return Model.findAndModify(criteria, projection, options, callback)
 }
 
 // Delete many in DB
@@ -35,6 +35,8 @@ let updateMultipleData = function (Model,criteria, dataToSet, options, callback)
 
 
 module.exports = {
+    createData: createData,
+    deleteData: deleteData,
     getData: getData,
     updateMultipleData:updateMultipleData,
 };
